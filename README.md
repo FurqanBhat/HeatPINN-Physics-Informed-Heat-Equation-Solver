@@ -101,12 +101,16 @@ Make sure a checkpoint exists at `outputs/saved_models/model.pth` before evaluat
 - `outputs/plots/training_loss.png` - loss curve over epochs.
 - `outputs/plots/evaluation_heatmaps.png` - side-by-side predicted solution, analytical solution, and absolute error.
 
+## Sample Visualizations
+
+![Training loss curve](outputs/plots/training_loss.png)
+
+![Evaluation heatmaps](outputs/plots/evaluation_heatmaps.png)
+
 ## Notebook
 
 If you prefer exploring the model interactively, open `notebooks/HeatEquation_PINN_Demo.ipynb` in Jupyter or VS Code. The notebook mirrors the scripts, so once you understand one workflow you can switch between them easily.
 
 
 
-## License
 
-Released under the [MIT License](LICENSE). Contributions, forks, and experiments are welcome! If you build something new atop this template, consider opening an issue or PR to share it.

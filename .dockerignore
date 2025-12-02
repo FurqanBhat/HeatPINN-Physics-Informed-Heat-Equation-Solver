@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pth
+*.pt
+*.png
+*.jpg
+*.jpeg
+*.csv
+*.npy
+*.npz
+outputs/
+.env
+.DS_Store
