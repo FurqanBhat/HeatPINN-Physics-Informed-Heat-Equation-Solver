@@ -8,11 +8,12 @@ class PINN(nn.Module):
 
         net=[]
         for i in range(len(layers)-1):
-            input=layers[i]
-            linear=nn.Linear()
-            self.net.append(linear)
+            input_dim=layers[i]
+            output_dim=layers[i+1]
+            linear=nn.Linear(input_dim, output_dim)
+            net.append(linear)
             if i<(len(layers)-2):
-                self.net.append(nn.Tanh())
+                net.append(nn.Tanh())
             
         #[2, 8, 16, 8, 1]
         self.net = nn.Sequential(*net)

@@ -1,7 +1,7 @@
 import torch
 
 def gradient(y, x):
-    return torch.autograd(
+    return torch.autograd.grad(
         y, x,
         grad_outputs=torch.ones_like(y),
         create_graph=True,
